@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffcccc, #ffe6e6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: justify;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            background-image: url('https://via.placeholder.com/800x400?text=Romantic+Background');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(10px) brightness(0.7);
+        }
+        h1 {
+            color: #ff4d4d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            color: #333;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+        p a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .signature {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+            text-align: center;
+        }
+        .cta {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .cta button {
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .cta button:hover {
+            background-color: #e60000;
+            transform: scale(1.05);
+        }
+        .cta-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .cta-options button {
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .cta-options button:hover {
+            background-color: #e60000;
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .cta button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+            .cta-options button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+    <script>
+        function handleResponse(answer) {
+            if (answer === 'yes') {
+                alert('Te amaré toda la vida 💖.');
+            } else {
+                alert('Estoy seguro que querías presionar, sí. Vuelve a intentarlo.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Para ti, amor.</h1>
+        <p>
+            No sé si alguna vez te lo dije, pero a veces me pierdo <a href="https://open.spotify.com/intl-es/track/6BnRwKaF2bRuA3bbrPjBJg" target="_blank">sin saber por qué</a> siento todo esto por ti. 
+            Es algo que simplemente pasa, como si el universo hubiera decidido que eras para mí. 
+            Y si estamos <a href="https://open.spotify.com/intl-es/track/3GSMdtJphymHEsR8K9jT5Q" target="_blank">locos</a>, la verdad no me importa, porque esto que tenemos es lo más real que he vivido.
+        </p>
+        <p>
+            <a href="https://open.spotify.com/intl-es/track/0mlnmHVwY0o096HMTRUsmJ" target="_blank">Me gusta como eres</a>, con todo lo que te hace única: tu forma de reír, de hablar y de mirar el mundo. 
+            Contigo, la vida se siente diferente, como caminar por la arena de <a href="https://open.spotify.com/intl-es/track/06FhHrnpYCmIxIxIGUehxQ" target="_blank">Palmar</a>, con el sol justo donde tiene que estar.
+        </p>
+        <p>
+            <a href="https://open.spotify.com/intl-es/track/6kdCN6gTWLcLxmLXoUcwuI" target="_blank">Eres</a> mi lugar seguro, mi pausa en medio del caos. 
+            Contigo siento que podría llegar <a href="https://open.spotify.com/intl-es/track/05xgON7xWm3yN1yarMHdBv" target="_blank">donde nadie pueda ir</a>, porque estar a tu lado hace que todo parezca posible. 
+            Te lo digo sin rodeos: <a href="https://open.spotify.com/intl-es/track/2urjF7QhprjmNRK2aqLnxE" target="_blank">viviré para ti</a>, para que tengamos momentos que siempre recordemos.
+        </p>
+        <p>
+            Desde que <a href="https://open.spotify.com/intl-es/track/1sJFu2pvYJhtEOo9oVe1TZ" target="_blank">me enamoré de ti</a>, todo tiene otro color, otro ritmo. Es difícil explicarlo, pero estar contigo hace que todo sea mejor. 
+            No puedo evitar adorarte con cada parte de mí, porque eres mi motivo y mi compañera de vida.
+        </p>
+        <p class="signature">
+            Atentamente,<br>
+            Un loco enamorado de ti.
+        </p>
+        <div class="cta-options">
+            <h1>¿Quieres ser mi novia?</h1>
+            <button onclick="handleResponse('yes')">Sí</button>
+            <button onclick="handleResponse('no')">No</button>
+        </div>
+    </div>
+</body>
+</html>
